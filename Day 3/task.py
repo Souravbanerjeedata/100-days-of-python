@@ -59,3 +59,23 @@
 #     price += 1
 
 # print(f"Your bill is ${price}.")
+
+#  final task: create a treasure island
+
+# print("Welcome to treasure island.\nyour mission is to find the treasure.")
+# choice1 = input("you're at a cross road. where do you want to go?\nType 'left' or 'right'\n")
+# if choice1 == 'left':
+#     choice2 = input("You're at a lake. If you wanna swim type 'swim', if you wanna wait type 'wait'\n")
+#     if choice2 == 'swim' or choice2 != 'wait':
+#         print("You were attacked by trout.\nGame Over!!")
+#     elif choice2 == 'wait':
+#         print('You found a boat and crossed over.')
+#         choice3 = input("There are 3 door in different color. Which color would you choose?\ntype 'red', 'yellow' or 'blue'\n")
+#         if choice3 == 'red':
+#             print("You were burned by fire.\n Game Over!")
+#         elif choice3 == 'yellow':
+#             print('You found the treasure! You win!!')
+#         else:
+#             print("Eaten by beasts. Game Over!!")
+# elif choice1 == 'right':
+#     print("You fell into a hole.\nGame Over!!")
