@@ -1,4 +1,4 @@
-# learned class inheritance
+# learned class inheritance || slice list and tuples
 
 from turtle import Screen
 from snake import Snake
@@ -40,10 +40,8 @@ while game_on:
         scoreboard.game_over()
 
     # Detect collisionn with tail.
-    for segment in snake.snakes:
-        if snake.head == segment:
-            pass
-        elif snake.head.distance(segment) < 10:
+    for segment in snake.snakes[1:]:
+        if snake.head.distance(segment) < 10:
             game_on = False
             scoreboard.game_over()
 
