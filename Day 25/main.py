@@ -13,8 +13,11 @@
 
 # Do the same but with pandas
 
-import pandas
+# import pandas
 
-data = pandas.read_csv("./weather_data.csv")
+# data = pandas.read_csv("./weather_data.csv")
 
-print(data["temp"])
+# print(data["temp"])
+
+# Two primary data structures in pandas. Series and DataFrame/
+# The whole table is the DataFrame and each column is a series.
