@@ -8,6 +8,15 @@ FONT_NAME = "Courier"
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+def save():
+    website = website_entry.get()
+    email = username_entry.get()
+    password = password_entry.get()
+
+    with open('password.txt', 'a') as data_file:
+        data_file.write(f"{website} | {email} | {password}\n")
+        website_entry.delete(0, END)
+        password_entry.delete(0, END)
 
 # ---------------------------- UI SETUP ------------------------------- #
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -44,7 +53,7 @@ password_entry.grid(row=3, column=1)
 # Buttons
 generate_button = Button(text='Generate Password',width=14)
 generate_button.grid(row=3, column=2)
-add_button = Button(text='Add', width=36)
+add_button = Button(text='Add', width=36, command=save)
 add_button.grid(row=4, column=1, columnspan=2)
 
 window.mainloop()
